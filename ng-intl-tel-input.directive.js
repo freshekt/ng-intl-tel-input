@@ -52,7 +52,7 @@ angular.module('ngIntlTelInput')
           // Set input value to model value and trigger evaluation.
           ctrl.$formatters.push(function (value) {
             if (value) {
-              if(value.charAt(0) !== '+') {
+              if(attr.usePluse && value.charAt(0) !== '+') {
                 value = '+' + value;
               }
               elm.intlTelInput('setNumber', value);
