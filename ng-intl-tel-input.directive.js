@@ -11,9 +11,9 @@ angular.module('ngIntlTelInput')
             return;
           }
           // Override default country.
-          if (attr.initialCountry) {
-            ngIntlTelInput.set($(elm[0]).data());
-          }
+          //if (attr.initialCountry) {
+           ngIntlTelInput.set($(elm[0]).data());
+          //}
           // Initialize.
           ngIntlTelInput.init(elm);
           // Set Selected Country Data.
